@@ -32,7 +32,7 @@ serde_json = "1"
 handlebars = "1"
 unicode_categories = "0.1.1"
 indexmap = "1"
-websocket = "0.20"
+websocket = { git = "https://github.com/mati865/rust-websocket.git" }
 regex = "1"
 walkdir = "2"
 base-x = "0.2"
@@ -53,7 +53,7 @@ features = ["serde"]
 version = "0.9"
 
 [target.'cfg(not(any(target_os = "windows", target_os = "macos", target_os = "ios")))'.dependencies]
-openssl-sys = { version = "= 0.9.37", features = ["vendored"] }
+openssl-sys = { version = "0.9.38", features = ["vendored"] }
 
 [features]
 development-mode = []
